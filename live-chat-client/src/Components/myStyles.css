@@ -16,3 +16,9 @@
   cursor: pointer;
 
 }
+
+.chat-input{
+  border-bottom: 3px solid #70AF85;
+  color: #31363F;
+
+}

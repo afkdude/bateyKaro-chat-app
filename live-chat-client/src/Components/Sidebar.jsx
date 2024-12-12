@@ -64,7 +64,7 @@ function Sidebar() {
     },
   ]);
   return (
-    <div className="basis-[30%]   flex flex-col ">
+    <div className="flex-[0.3]   flex flex-col ">
       {/* sidebar header  */}
       <div className="px-[5px] py-[10px] m-[10px] flex justify-between bg-[white] rounded-[20px]">
         <div>
