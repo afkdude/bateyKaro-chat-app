@@ -1,0 +1,18 @@
+.sidebar-search{
+  border-bottom: 2px solid #70AF85;
+  color: #31363F;
+}
+
+.conversation-items{
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #70AF85 #f0f0f0; /* thumb and track colors */
+  scroll-behavior: smooth;
+}
+
+
+.convo-component:hover{
+
+  background-color: rgb(224, 221, 221);
+  cursor: pointer;
+
+}
