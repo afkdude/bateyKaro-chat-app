@@ -14,7 +14,7 @@ function ChatArea({ details }) {
       <div className="chat-header  bg-white rounded-[20px]  px-[10px] py-[10px] flex items-center justify-between">
         <div className="flex gap-4 items-center ">
           <div className="bg-[#70AF85] rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold text-white">
-            <p>{ details[0].name[0] }</p>
+            <p>{details[0].name[0]}</p>
           </div>
 
           <div className="flex-1">
@@ -30,12 +30,20 @@ function ChatArea({ details }) {
       </div>
 
       {/* chat text area */}
-      <div className="chat-text-area bg-white flex-1 rounded-[20px]  ">
+      <div className="chat-text-area bg-white flex-1 rounded-[20px]  pt-3  ">
         <MessageOthers />
-        <MessageSelf/>
+        <MessageSelf />
+        <MessageOthers />
+        <MessageSelf />
+        <MessageOthers />
+        <MessageSelf />
+        <MessageOthers />
+        <MessageSelf />
+        <MessageOthers />
+        <MessageSelf />
+        <MessageOthers />
+        <MessageSelf />
       </div>
-
-      
 
       {/* chat input area  */}
       <div className="chat-input bg-white rounded-[20px]  px-[10px] flex items-center gap-2">

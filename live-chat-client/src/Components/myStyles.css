@@ -12,8 +12,9 @@
 
 .convo-component:hover{
 
-  background-color: rgb(224, 221, 221);
+  background-color: rgb(233, 238, 232);
   cursor: pointer;
+  border-radius: 15px;
 
 }
 
@@ -21,4 +22,18 @@
   border-bottom: 3px solid #70AF85;
   color: #31363F;
 
+}
+
+.chat-text-area{
+  overflow: scroll;
+  overflow-x: hidden;
+  
+}
+
+.chat-text-area::-webkit-scrollbar{
+  display: none;
+}
+
+.welcome-icon{
+  border-bottom: 5px solid #70AF85;
 }

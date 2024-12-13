@@ -14,7 +14,7 @@ function MessageOthers() {
 
   return (
     <div>
-      <div className="flex items-center px-4 my-2 gap-2 ">
+      <div className="flex items-center px-4 my-2 gap-2  justify-start">
         <div className="bg-green-300 h-10 w-10 flex justify-center items-center rounded-full">
           <p className="icon  ">{props1.name[0]}</p>
         </div>

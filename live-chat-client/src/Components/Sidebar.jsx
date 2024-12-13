@@ -39,7 +39,7 @@ function Sidebar() {
     },
     {
       name: "Friend 2",
-      lastMessage: "Can we meet tomorrow?",
+      lastMessage: "Yo Yo ?",
       timeStamp: "4 days ago",
     },
     {
