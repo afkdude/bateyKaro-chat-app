@@ -7,7 +7,7 @@ import PasswordIcon from "@mui/icons-material/Password";
 
 function Login() {
   return (
-    <div className="flex justify-center items-center w-[100%] p-5  ">
+    <div className="flex justify-center items-center h-[90vh] w-[90vw] bg-[#F4F5F8]  rounded-[20px]  p-5  ">
       <div className="side-logo flex-[0.3] p-2  hidden lg:block">
         <img src={logo} alt="" />
       </div>
@@ -37,7 +37,7 @@ function Login() {
         <form
           className="border border-[#C6EBC9] rounded-lg flex flex-col p-7 gap-5 h-[500px] justify-evenly"
           onSubmit={(e) => {
-            e.preventDefault(); 
+            e.preventDefault();
           }}
         >
           <p className="text-center text-[30px] text-[#70AF85] font-bold rounded-[20px] border-b-2 border-[#C6EBC9] pb-1">
@@ -46,7 +46,7 @@ function Login() {
 
           <div className="input-border">
             <AlternateEmailIcon className="text-[#70AF85]" />
-            <input  
+            <input
               type="email"
               name="email"
               placeholder="Enter Email"

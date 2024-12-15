@@ -8,7 +8,10 @@ import SearchIcon from "@mui/icons-material/Search";
 import NightlightIcon from "@mui/icons-material/Nightlight";
 import { IconButton } from "@mui/material";
 import ConversationsItems from "./ConversationsItems";
+import GroupsIcon from "@mui/icons-material/Groups";
+import PublicIcon from "@mui/icons-material/Public";
 import "./myStyles.css";
+import { useNavigate } from "react-router";
 
 function Sidebar() {
   const [conversation, setConversation] = useState([
@@ -63,6 +66,8 @@ function Sidebar() {
       timeStamp: "2 weeks ago",
     },
   ]);
+
+  const navigate = useNavigate();
   return (
     <div className="flex-[0.3]   flex flex-col ">
       {/* sidebar header  */}
@@ -73,15 +78,27 @@ function Sidebar() {
           </IconButton>
         </div>
         <div>
-          <IconButton>
-            <PersonAddIcon className="text-[#70AF85]" />
+          <IconButton
+            onClick={() => {
+              navigate("groups");
+            }}
+          >
+            <GroupsIcon className="text-[#70AF85]" />
           </IconButton>
 
-          <IconButton>
-            <GroupAddIcon className="text-[#70AF85]" />
+          <IconButton
+            onClick={() => {
+              navigate("users-groups");
+            }}
+          >
+            <PublicIcon className="text-[#70AF85]" />
           </IconButton>
 
-          <IconButton>
+          <IconButton
+            onClick={() => {
+              navigate("create-groups");
+            }}
+          >
             <AddCircleIcon className="text-[#70AF85]" />
           </IconButton>
 
@@ -106,7 +123,13 @@ function Sidebar() {
       {/* sidebar convo section  */}
       <div className=" conversation-items  px-[10px] py-[10px] m-[10px] bg-[white] rounded-[20px] flex-1 overflow-y-scroll">
         {conversation.map((v, i) => {
-          return <ConversationsItems details={v} key={i} />;
+          return (
+            <ConversationsItems
+              details={v}
+              key={i}
+             
+            />
+          );
         })}
       </div>
     </div>

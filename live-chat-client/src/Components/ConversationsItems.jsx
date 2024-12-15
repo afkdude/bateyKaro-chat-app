@@ -1,10 +1,17 @@
 import React from "react";
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import "./myStyles.css";
+import { useNavigate } from "react-router";
 
 function ConversationsItems({ details }) {
+  const navigate = useNavigate(); 
   return (
-    <div className="grid grid-cols-[40px_auto_auto] gap-4 p-4 items-center convo-component">
+    <div
+      className="grid grid-cols-[40px_auto_auto] gap-4 p-4 items-center convo-component"
+      onClick={() => {
+        navigate("chat");
+      }}
+    >
       {/* Avatar or Initials */}
       <div className="bg-[#70AF85] rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold text-white">
         {details.name[0]}

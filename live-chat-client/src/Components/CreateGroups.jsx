@@ -4,7 +4,7 @@ import { IconButton } from "@mui/material";
 
 function CreateGroups() {
   return (
-    <div className="flex flex-col w-[100%] items-center justify-center px-4 gap-2">
+    <div className="flex flex-[0.7] flex-col w-[100%] items-center justify-center px-4 gap-2">
       <p className="text-[40px]  font-semibold text-[#FF971D]  italic">
         Sangathan me shakti ha!
       </p>
