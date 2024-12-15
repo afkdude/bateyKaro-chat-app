@@ -4,6 +4,8 @@ import Sidebar from './Sidebar'
 import ChatArea from './ChatArea'
 import Welcome from './Welcome';
 import CreateGroups from './CreateGroups';
+import Login from './Login';
+import Users_Groups from './Users_Groups';
 function MainContainer() {
     const [conversation, setConversation] = useState([
       {
@@ -59,8 +61,11 @@ function MainContainer() {
     ]);
   return (
     <div className='bg-[#F4F5F8] h-[90vh] w-[90vw] rounded-[20px]  flex  '>
+      
+      {/* <Login/> */}
       <Sidebar />
-      <CreateGroups/>
+      <Users_Groups/>
+      {/* <CreateGroups/> */}
       {/* <Welcome/> */}
       {/* <ChatArea details={conversation} /> */}
     </div>

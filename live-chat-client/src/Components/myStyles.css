@@ -37,3 +37,51 @@
 .welcome-icon{
   border-bottom: 5px solid #70AF85;
 }
+
+
+.login-section input{
+  outline: none;
+  color: #222831;
+  padding: 2px;
+  width: 325px;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.input-border{
+  border-bottom: 2px solid #70AF85;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+
+
+}
+
+/* .login-btn:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: ease-in-out;
+  
+} */
+.login-btn:active{
+  transform: scale(0.97);
+  transition: ease-in;
+}
+
+
+.online-users-list{
+  /* border: 1px solid green; */
+  
+  border-radius: 15px;
+}
+
+.online-users-list:hover{
+  background-color: rgb(233, 238, 232);
+  cursor: pointer;
+}
+
+.list-parent{
+    overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
